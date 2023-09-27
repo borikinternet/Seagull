@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
 <!--
 
   This program is free software; you can redistribute it and/or modify
@@ -17,20 +18,18 @@
  (c)Copyright 2006 Hewlett-Packard Development Company, LP.
 
 -->
-
-<?xml version="1.0" encoding="ISO-8859-1" ?>
 <scenario>
 
 <counter>
-  <counterdef name="client-uid-counter"     init="1"></counterdef>
+  <counterdef name="client-uid-counter" init="1"> </counterdef>
 </counter>
 
 <traffic>
   <send channel="channel-1">
     <action>
-       <set-value name="uid" format="$(client-uid-counter)"></set-value>
+       <set-value name="uid" format="$(client-uid-counter)"> </set-value>
        <restore-from-external field="1" entity="TC_INVOKE" sub-entity="operation-data"
-                        begin="5" end="10"></restore-from-external>
+                        begin="5" end="10"> </restore-from-external>
 
     </action>
     <primitive name="TC_BEGIN">
@@ -43,8 +42,8 @@
       </component>
     </primitive>
     <action>
-      <inc-counter name="client-uid-counter"></inc-counter>
-      <start-timer></start-timer>
+      <inc-counter name="client-uid-counter"> </inc-counter>
+      <start-timer> </start-timer>
     </action>
   </send>
 
