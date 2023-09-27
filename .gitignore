@@ -31,3 +31,10 @@
 tmp/
 
 diameter_Gy_tests/logs
+
+*.pcap
+*.tar
+*.tar.gz
+*.csv
+
+.idea
